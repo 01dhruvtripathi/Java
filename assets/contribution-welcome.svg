@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+  <defs>
+    <linearGradient id="contribGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#11998e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38ef7d;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="buttonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="200" fill="url(#contribGrad)"/>
+  
+  <!-- Decorative code brackets -->
+  <text x="30" y="140" font-family="'Courier New', monospace" font-size="80" fill="white" opacity="0.1">&lt;/&gt;</text>
+  <text x="680" y="140" font-family="'Courier New', monospace" font-size="80" fill="white" opacity="0.1">{ }</text>
+  
+  <!-- Main content -->
+  <g transform="translate(400, 60)">
+    <!-- Icon circle -->
+    <circle cx="0" cy="0" r="35" fill="white" opacity="0.2" filter="url(#glow)"/>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="40" text-anchor="middle">🤝</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">Contributions Welcome!</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" opacity="0.9">Help us grow this learning resource</text>
+  
+  <!-- Action buttons/badges -->
+  <g transform="translate(240, 160)">
+    <!-- Fork -->
+    <rect x="0" y="0" width="90" height="30" rx="15" fill="white" opacity="0.3"/>
+    <text x="45" y="20" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" font-weight="bold">🍴 Fork</text>
+    
+    <!-- Contribute -->
+    <rect x="105" y="0" width="110" height="30" rx="15" fill="white" opacity="0.3"/>
+    <text x="160" y="20" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" font-weight="bold">✏️ Contribute</text>
+    
+    <!-- Star -->
+    <rect x="230" y="0" width="90" height="30" rx="15" fill="white" opacity="0.3"/>
+    <text x="275" y="20" font-family="Arial, sans-serif" font-size="13" fill="white" text-anchor="middle" font-weight="bold">⭐ Star</text>
+  </g>
+  
+  <!-- Floating elements -->
+  <g opacity="0.15" fill="white">
+    <circle cx="100" cy="30" r="6"/>
+    <circle cx="700" cy="30" r="8"/>
+    <circle cx="150" cy="170" r="5"/>
+    <circle cx="650" cy="170" r="7"/>
+    <circle cx="60" cy="100" r="4"/>
+    <circle cx="740" cy="100" r="6"/>
+  </g>
+</svg>
